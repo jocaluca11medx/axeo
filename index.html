@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Método Sona: 30 dias para vencer a câmera | Axeo</title>
+<meta name="description" content="Guia gratuito de 30 dias, com 5 minutos por dia, para perder o medo de gravar vídeos. Você começa onde ninguém vê e sobe um degrau de cada vez.">
+<meta name="theme-color" content="#0B0B0D">
+<meta property="og:title" content="Método Sona: 30 dias para vencer a câmera">
+<meta property="og:description" content="Guia gratuito para gravar vídeos sem travar, mesmo odiando a própria voz.">
+<meta property="og:type" content="website">
+<!-- Depois de ter o domínio, troque pelo endereço completo: https://SEUDOMINIO/assets/capa.jpg -->
+<meta property="og:image" content="assets/capa.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B0B0D;--panel:#141417;--line:#2C2C31;--silver:#E3E5E9;--body:#C4C7CD;--mute:#8D919B;--red:#E01B24;--redd:#8E1218;--r:14px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--body);font:400 1rem/1.65 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--silver)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{color:var(--silver);font-weight:700;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5.6vw,3.4rem)}
+h2{font-size:clamp(1.5rem,3.6vw,2.2rem);margin-bottom:.8rem}
+h3{font-size:1.05rem}
+p+p{margin-top:.9rem}
+.lead{font-size:1.1rem;max-width:34rem;color:var(--body)}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+.brand{display:flex;align-items:center;gap:.7rem;padding:1.4rem 0;font-weight:600;color:var(--silver);letter-spacing:.14em;font-size:.85rem;text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,6vw,5rem);align-items:center;padding:clamp(1.5rem,5vw,3.5rem) 0 clamp(3rem,7vw,5rem)}
+.hero .lead{margin:1.3rem 0 1.8rem}
+.cover{position:relative;justify-self:center;width:min(340px,100%)}
+.cover img{border-radius:12px;box-shadow:0 30px 60px -20px #000,0 0 0 1px var(--line);transform:rotate(2.2deg)}
+.cover::after{content:"";position:absolute;inset:auto -12% -10% -12%;height:40%;background:radial-gradient(closest-side,rgba(224,27,36,.28),transparent);z-index:-1}
+/* form */
+.lead-form{max-width:30rem}
+.lead-form label.l{display:block;font-weight:500;color:var(--silver);font-size:.9rem;margin-bottom:.4rem}
+.row{display:flex;gap:.6rem;flex-wrap:wrap}
+.lead-form input[type=email]{flex:1 1 15rem;min-width:0;background:var(--panel);border:1px solid #3A3A41;color:var(--silver);border-radius:10px;padding:.95rem 1rem;font:inherit;font-size:1rem}
+.lead-form input[type=email]::placeholder{color:#6C707A}
+button.cta{background:var(--red);color:#fff;border:0;border-radius:10px;padding:.95rem 1.4rem;font:600 1rem Poppins,sans-serif;cursor:pointer;flex:0 0 auto}
+button.cta:hover{background:#F0262F}
+.check{display:flex;gap:.6rem;align-items:flex-start;margin-top:.8rem;font-size:.78rem;color:var(--mute);line-height:1.5}
+.check input{margin-top:.2rem;accent-color:var(--red);flex:0 0 auto}
+.msg{margin-top:.7rem;font-size:.85rem;color:var(--silver);min-height:1.2em}
+/* escada */
+.ladder{background:var(--panel);border-block:1px solid var(--line)}
+.ladder-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.steps{list-style:none;padding:0}
+.steps li{display:grid;grid-template-columns:5.2rem 1fr;gap:1rem;align-items:center;padding:1.05rem 0;border-bottom:1px solid var(--line)}
+.steps li:last-child{border-bottom:0}
+.dots{display:flex;gap:.3rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;border:1.5px solid #4A4A52;transition:background .35s,border-color .35s,box-shadow .35s}
+.dots i.on{background:var(--red);border-color:var(--red);box-shadow:0 0 0 3px rgba(224,27,36,.2)}
+.steps b{display:block;color:var(--silver);font-weight:600}
+.steps span{font-size:.88rem;color:var(--mute)}
+/* conteúdo */
+.inside{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.inside figure img{border-radius:10px;box-shadow:0 0 0 1px var(--line)}
+.inside figcaption{font-size:.82rem;color:var(--mute);margin-top:.6rem}
+.list{margin-top:2.4rem;display:grid;grid-template-columns:repeat(2,1fr);gap:0 3rem}
+.list div{padding:1rem 0;border-top:1px solid var(--line)}
+.list h3{margin-bottom:.25rem}
+.list p{font-size:.92rem}
+/* faq */
+details{border-top:1px solid var(--line);padding:1.1rem 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;color:var(--silver);font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--red);font-weight:700;font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:.7rem;font-size:.95rem;max-width:42rem}
+.faq{max-width:46rem}
+.final{text-align:left;background:linear-gradient(180deg,var(--ink),#150709)}
+.final .lead-form{margin-top:1.6rem}
+footer{border-top:1px solid var(--line);padding:2rem 0 2.6rem;font-size:.8rem;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between}
+footer a{color:var(--body)}
+@media (max-width:820px){
+ .hero,.ladder-grid{grid-template-columns:1fr}
+ .cover{width:min(240px,66%);justify-self:center;margin-top:1rem}
+ .inside{grid-template-columns:1fr 1fr 1fr;gap:.6rem}
+ .inside figcaption{font-size:.7rem}
+ .list{grid-template-columns:1fr}
+ button.cta{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dots i{transition:none}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#topo" id="topo"><img src="assets/logo.png" alt="" width="34" height="34">AXEO</a>
+</header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <h1>Grave vídeos sem travar, mesmo que você odeie a sua própria voz.</h1>
+    <p class="lead">Um guia gratuito de 30 dias, com 5 minutos por dia. Você começa onde ninguém vê e sobe um degrau de cada vez, até publicar sem medo.</p>
+    <form class="lead-form" action="COLE_AQUI_A_URL_DO_FORMULARIO" method="post" novalidate>
+      <label class="l" for="email1">Seu melhor e-mail</label>
+      <div class="row">
+        <input id="email1" type="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+        <button class="cta" type="submit">Quero baixar o guia</button>
+      </div>
+      <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em receber o guia e novidades da Axeo por e-mail. Posso cancelar quando quiser. Veja a <a href="privacidade.html">política de privacidade</a>.</span></label>
+      <p class="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="cover"><img src="assets/capa.jpg" alt="Capa do e-book Método Sona: 30 dias para vencer a câmera" width="420" height="640"></div>
+</div>
+
+<section class="ladder">
+  <div class="wrap ladder-grid">
+    <div>
+      <h2>Ninguém te joga na frente da câmera.</h2>
+      <p>O seu bloqueio quase nunca é o roteiro. É o medo de ser julgado. Por isso o Método Sona usa exposição gradual: você só sobe de nível quando o anterior já ficou confortável.</p>
+      <p>Na primeira semana, ninguém vê nada. Tudo fica no seu celular.</p>
+    </div>
+    <ol class="steps" id="escada">
+      <li data-n="1"><div class="dots"></div><div><b>Só você</b><span>Começa no Dia 1. Grave, ouça e apague.</span></div></li>
+      <li data-n="2"><div class="dots"></div><div><b>Uma pessoa de confiança</b><span>Começa no Dia 10. Um vídeo para quem torce por você.</span></div></li>
+      <li data-n="3"><div class="dots"></div><div><b>Seguidores ou conta anônima</b><span>Começa no Dia 12. Exposição leve e controlada.</span></div></li>
+      <li data-n="4"><div class="dots"></div><div><b>Seu perfil principal</b><span>Começa no Dia 18. Stories, legendas e Reels.</span></div></li>
+      <li data-n="5"><div class="dots"></div><div><b>Público aberto</b><span>Começa no Dia 23. Publicar e fixar o seu manifesto.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que vem dentro do guia</h2>
+    <p class="lead">51 páginas feitas para ler no celular. Cada dia tem a mesma estrutura: missão, passo a passo, regra de ouro e um check para marcar.</p>
+    <div class="inside">
+      <figure><img src="assets/capa.jpg" alt="Capa do guia" loading="lazy"><figcaption>O guia completo</figcaption></figure>
+      <figure><img src="assets/dia.jpg" alt="Página de um dia do desafio" loading="lazy"><figcaption>Uma missão por dia</figcaption></figure>
+      <figure><img src="assets/painel.jpg" alt="Painel de progresso dos 30 dias" loading="lazy"><figcaption>Painel de progresso</figcaption></figure>
+    </div>
+    <div class="list">
+      <div><h3>Diagnóstico e contrato</h3><p>Meça o seu ponto de partida e assine o compromisso de 5 minutos por dia.</p></div>
+      <div><h3>30 missões curtas</h3><p>Voz, dicção, olhar, roteiro, postura, legendas, críticas e gravação em lote.</p></div>
+      <div><h3>Roteiros de 3 linhas</h3><p>Seis modelos prontos de gancho, conteúdo e chamada para preencher.</p></div>
+      <div><h3>Banco de trava-línguas e vícios de linguagem</h3><p>Exercícios de dicção e um método para trocar o “tipo” e o “né” por pausas.</p></div>
+      <div><h3>30 ideias de vídeo</h3><p>Para os dias em que o assunto sumir.</p></div>
+      <div><h3>Plano de resgate</h3><p>O que fazer quando você pula um dia, trava ou fica com vergonha de publicar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ladder">
+  <div class="wrap">
+    <h2>Para quem é</h2>
+    <p class="lead">Para quem precisa aparecer em vídeo e adia isso há meses.</p>
+    <div class="list">
+      <div><h3>Microempreendedores</h3><p>Precisam vender no Instagram, mas têm vergonha de gravar.</p></div>
+      <div><h3>Profissionais liberais</h3><p>Médicos, advogados, contadores e outros que estão migrando para o digital.</p></div>
+      <div><h3>Estudantes e profissionais</h3><p>Preparando uma apresentação de trabalho ou um pitch.</p></div>
+      <div><h3>Quem odeia a própria voz</h3><p>E quer se acostumar com ela antes de mostrar para alguém.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap faq">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>O guia é realmente gratuito?</summary><p>Sim. Você informa o e-mail e recebe o PDF na hora, na sua caixa de entrada.</p></details>
+    <details><summary>Preciso de algum equipamento?</summary><p>Não. Basta o celular. O guia ensina a montar um estúdio de R$ 0 com a luz de uma janela.</p></details>
+    <details><summary>Quanto tempo leva por dia?</summary><p>5 minutos na maioria dos dias. Os dias de produção, como o Reels e a gravação em lote, pedem até 20 minutos.</p></details>
+    <details><summary>Preciso postar desde o primeiro dia?</summary><p>Não. Os primeiros dias são totalmente privados. Você só publica de verdade a partir da terceira fase.</p></details>
+    <details><summary>O que é o app Axeo?</summary><p>Estamos criando um teleprompter que roda junto com a câmera, com trilhas de desafios de exposição e dicção. Quem baixar o guia entra na lista VIP e recebe o convite para testar a versão beta gratuita.</p></details>
+    <details><summary>Isso substitui um psicólogo ou fonoaudiólogo?</summary><p>Não. O guia é um treino. Se o medo ou a ansiedade forem intensos, ou se você tiver dificuldades persistentes de fala, procure um profissional.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Comece o Dia 1 hoje.</h2>
+    <p class="lead">São 30 segundos diante da câmera, e ninguém precisa ver.</p>
+    <form class="lead-form" action="COLE_AQUI_A_URL_DO_FORMULARIO" method="post" novalidate>
+      <label class="l" for="email2">Seu melhor e-mail</label>
+      <div class="row">
+        <input id="email2" type="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required>
+        <button class="cta" type="submit">Quero baixar o guia</button>
+      </div>
+      <label class="check"><input type="checkbox" name="consentimento" required><span>Concordo em receber o guia e novidades da Axeo por e-mail. Posso cancelar quando quiser.</span></label>
+      <p class="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Axeo. Todos os direitos reservados.</span>
+    <span><a href="https://www.instagram.com/axeo.app" rel="noopener">@axeo.app</a> · <a href="privacidade.html">Privacidade</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // pontos da escada de exposição
+  var rows=document.querySelectorAll('#escada li');
+  rows.forEach(function(li){
+    var n=+li.dataset.n,d=li.querySelector('.dots');
+    for(var i=0;i<5;i++){var s=document.createElement('i'); if(i<n) s.className='on'; d.appendChild(s);}
+  });
+  var ok=!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window;
+  if(ok){
+    var all=document.querySelectorAll('#escada .dots i.on');
+    all.forEach(function(i){i.classList.remove('on');i.dataset.on='1'});
+    var io=new IntersectionObserver(function(es){
+      if(!es[0].isIntersecting) return; io.disconnect();
+      rows.forEach(function(li,k){
+        setTimeout(function(){
+          li.querySelectorAll('i[data-on]').forEach(function(i,j){setTimeout(function(){i.classList.add('on')},j*90)});
+        },k*320);
+      });
+    },{threshold:.4});
+    io.observe(document.getElementById('escada'));
+  }
+  // formulário: avisa se ainda não foi conectado ao serviço de e-mail
+  document.querySelectorAll('.lead-form').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      var msg=f.querySelector('.msg');
+      if(f.getAttribute('action').indexOf('COLE_AQUI')>-1){
+        e.preventDefault();
+        msg.textContent='Formulário ainda não conectado. Cole o endereço do seu serviço de e-mail em action (veja o LEIAME).';
+      } else { msg.textContent='Enviando...'; }
+    });
+  });
+})();
+</script>
+</body>
+</html>
